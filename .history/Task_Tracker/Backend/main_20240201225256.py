@@ -6,7 +6,7 @@ from database import(
     fetch_all_todos,
     create_todo,
     update_todo,
-    remove_todo,
+    delete_todo,
 )
 
 
@@ -69,7 +69,5 @@ async def put_todo(title:str,desc:str):
 
 @app.delete('/api/todo{title}')
 async def delete_todo(title):
-    response=await remove_todo(title)
-    if response:
-        return "Successfully deleted Todo item"
-    raise HTTPException(404,f"there is no todo item with this title{title}")
+    r
+    return 1

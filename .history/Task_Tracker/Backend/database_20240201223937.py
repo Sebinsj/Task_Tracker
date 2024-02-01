@@ -32,5 +32,4 @@ async def update_todo(title,desc):
     return document
 
 async def remove_todo(title):
-    await collection.delete_one({"title":title})
-    return True
+    await collection.delete_one({"title":tit})
